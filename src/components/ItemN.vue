@@ -41,10 +41,13 @@ export default {
       type: Array,
       required: true,
     },
+    rules: {
+      type: Array,
+    },
   },
   methods: {
     onToggleItem() {
-      if (this.isDisabled) return;
+      if (this.isDisabled || this.rules.length === 2) return;
       this.isRote = !this.isRote;
       if (this.isRote) {
         this.$emit("onRote", this.item);

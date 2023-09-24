@@ -9,6 +9,7 @@
         :ref="`item-${index}`"
         @onRote="handleRule($event)"
         :itemContents="itemContents"
+        :rules="rules"
       />
     </div>
   </div>
