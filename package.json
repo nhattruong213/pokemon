@@ -5,9 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -53,6 +51,5 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue}": "vue-cli-service lint"
-  },
-  "homepage": "http://nhattruong213.github.io/pokemon"
+  }
 }
