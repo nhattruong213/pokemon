@@ -18,5 +18,6 @@ export default {
   color: var(--light);
   z-index: 3;
   font-size: 1.5rem;
+  text-align: center;
 }
 </style>

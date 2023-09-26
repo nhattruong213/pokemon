@@ -55,11 +55,15 @@ export default {
 
 .screen p {
   font-size: 2rem;
+  text-align: center;
+  padding: 0 10px;
 }
 
 .action {
   display: flex;
   margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .action button {
@@ -78,6 +82,7 @@ export default {
   justify-content: center;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
+  margin-bottom: 2rem;
 }
 
 .action button:hover {
