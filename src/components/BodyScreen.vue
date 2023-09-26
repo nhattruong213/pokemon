@@ -36,7 +36,11 @@ export default {
   },
   methods: {
     handleRule(item) {
-      if (this.rules.length === 2) return;
+      if (
+        this.rules.length === 2 ||
+        (this.rules.length === 1 && item.index === this.rules[0].index)
+      )
+        return;
       this.rules.push(item);
       if (
         this.rules.length === 2 &&
